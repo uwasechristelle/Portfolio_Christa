@@ -1,0 +1,361 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --bgcolor: #fff;
+  --heading: #2C2C2C;
+  --green: #28AE60;
+  --paragraph:#b3b1b1;
+
+}
+body {
+  background: var(--bgcolor);
+}
+/* ------------------ Hero ----------------- */
+#hero {
+  width: 100%;
+  height: 100vh;
+}
+.bg-image {
+  background-image:url(Images/hero-bg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+#hero .container {
+  padding: 0 5%;
+}
+/* ------------- Top Navigation Bar ------- */
+.top-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.top-navbar {
+  padding: 0 5%;
+  width: 100%;
+  height: 48px;
+  background: #282E31;
+}
+.contact-info {
+  display: flex;
+  gap: 20px;
+  margin-right: 10px;
+}
+.text-top {
+  color: #fff;
+  font-size: 14px;
+}
+/* ----------------- Icons ----------- */
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+.icon {
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  margin-right: 5px;
+}
+
+.icon-right {
+  width: 20px;
+  height: 20px;
+  color: var(--green);
+  margin-left: 10px;
+}
+/* -------------- Middle navbar ------------- */
+.middle-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 107px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 15px;
+
+}
+nav ul li a {
+  color: var(--bgcolor);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+}
+nav ul li a:hover{
+  color: var(--green);
+  cursor: pointer;
+}
+.logo-text a{
+  text-decoration: none;
+  font-size: 28px;
+  color: #fff
+}
+.get-quote-btn {
+  background: var(--green);
+  border-radius: 8px;
+  border: 0;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  height: 42px;
+  transition: all 0.5s;
+  width: 138px;
+}
+.get-quote-btn:hover{
+  background:#3cce79;
+  cursor: pointer;
+}
+/* ---------------- Hero content ------------ */
+.hero-content {
+  padding-top: 10%;
+}
+.hero-content h1 {
+  color: var(--bgcolor);
+  font-size: 50px;
+}
+.hero-content p {
+  color: var(--paragraph);
+    font-size: 20px;
+    margin: 20px 0;
+}
+.our-services-btn {
+  background: var(--green);
+  border-radius: 8px;
+  border: 0;
+  color: #fff;
+  font-size: 15px;
+  height: 46px;
+  margin-right: 15px;
+  transition: all 0.5s;
+  width: 160px;
+  
+}
+.our-services-btn:hover{
+  background:#3cce79;
+  cursor: pointer;
+}
+.see-btn {
+  background: none;
+  border-radius: 8px;
+  border: solid 0.5px var(--bgcolor);
+  color: var(--bgcolor);
+  height: 46px;
+  transition: all 0.5s;
+  width: 192px;
+}
+.see-btn:hover{
+  background: var(--green);
+  cursor: pointer;
+}
+/* -------------- Explore -------------- */
+#explore{
+  padding: 70px 5%;
+} 
+.title-center {
+  color: var(--heading);
+  text-align: center;
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.card-box {
+  position: relative;
+  overflow: hidden;
+}
+.card-box  img{
+  width: 100%;
+  display: block;
+  transition: transform 0.5s;
+}
+.layer {
+  width: 100%;
+  height: 0;
+  background: var(--green);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  color: var(--bgcolor);
+  font-size: 14px;
+  transition: height 0.5s;
+}
+.layer h3 {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.card-box img:hover{
+  transform: scale(1.1);
+}
+.card-box:hover .layer {
+  height: 100%;
+}
+/* ---------------- About ------------ */
+#about {
+  padding-right: 5%;
+}
+#about .container {
+  display: flex;
+  gap: 20px;
+}
+.about-content, .about-img {
+  flex-basis: 50%;
+}
+.about-img {
+  width: 621px;
+  height: 516px;
+}
+.about-img img {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+.details {
+  margin-top: 36px;
+  color: var(--heading);
+  font-size: 16px;
+}
+.titles-s {
+  font-weight: 500;
+  color: var(--heading);
+  font-size: 1.1rem;
+}
+.details p{
+  margin-bottom: 16px;
+}
+.about-header {
+  color: var(--heading);
+  font-weight: 600;
+  font-size: 2rem;
+  position: relative;
+}
+.about-header::before {
+  content: '';
+  position: absolute;
+  height: 3px;
+  background: var(--green);
+  width: 120px;
+  bottom: -12px;
+}
+.skill-item {
+  margin-top: 16px;
+}
+.about-btn{
+  margin-top: 40px;
+}
+/* -------------- progress bar ------------- */
+.progress-container {
+  width: 100%;
+  background: lightgray;
+  height: 15px;
+  overflow: hidden;
+}
+.progress-bar {
+  background-color: var(--green);
+}
+/* ----------------------- counter --------------- */
+#counter {
+  width: 100%;
+  height: 280px;
+  background: #F5FBFF;
+}
+#counter .container {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.counter-box h3 {
+  color: var(--heading);
+  font-size: 50px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+.counter-box p {
+ text-align: center;
+ color: var(--heading);
+}
+/* --------------------- works ---------------- */
+#work {
+  padding: 70px 5%;
+}
+#work .container {
+  display: grid;
+  
+  grid-template-columns: repeat(auto-fit,minmax(350px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.work-box {
+  position: relative;
+  overflow: hidden;
+}
+.work-img img {
+ width: 100%;
+ display: block;
+}
+.p-center {
+  color: #343434;
+  font-size: 16px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.work-layer {
+  width: 0;
+  height: 0;
+  background: var(--green);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  color: var(--bgcolor);
+  font-size: 14px;
+  opacity: 0.7;
+  transition: width 0.5s;
+}
+.work-layer h3 {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.work-box:hover .work-layer {
+  width: 100%;
+  height: 100%;
+}
