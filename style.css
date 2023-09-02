@@ -558,7 +558,64 @@ input[type=submit]:hover {
  }
 
 /* ------------------ mobile version----------- */
+
+nav .fa-solid {
+  display: none;
+}
 @media only screen and (max-width: 600px) {
+
+/* --------------- Hero -------------- */
+nav .fa-solid {
+  display: block;
+  font-size: 25px;
+}
+nav ul {
+  background: var(--heading);
+  position: fixed;
+  top: 0;
+  right: 0px;
+  width: 180px;
+  height: 100vh;
+  padding-top: 50px;
+  z-index: 2;
+}
+nav ul li {
+  display: block;
+  margin: 25px;
+}
+nav ul .fa-solid {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  cursor: pointer;
+}
+/* -------------- hidding icons --------- */
+.get-quote {
+  display: none;
+}
+.top-navbar {
+  display: none;
+}
+/* --------------- hero content --------------- */
+.hero-content {
+  margin-top: 50%;
+}
+.hero-content h1 {
+  color: var(--bgcolor);
+  font-size: 28px;
+}
+.hero-content p {
+  color: var(--paragraph);
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.our-services-btn {
+margin-bottom: 15px;
+}
+
+
+
+
 
   .row-contact .col-1, .col-2 {
     flex-basis: 100%;
